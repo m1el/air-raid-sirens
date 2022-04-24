@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>lviv air raid alerts</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 20px;
+            font-family: Verdana;
+        }
+        .days {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .day {
+            display: flex;
+            flex-direction: column;
+            flex:  120px 0 0;
+            height: 400px;
+        }
+        .day-title {
+            text-align: center;
+            font-weight: bold;
+            flex: 20px 0;
+        }
+        .segments {
+            background: #cccccc;
+            border-radius: 4px;
+            position: relative;
+            width: 100%;
+            flex: 1;
+        }
+        .segment {
+            background: #e34705;
+            border-radius: 4px;
+            position: absolute;
+            text-align: center;
+            width:  100%;
+        }
+    </style>
+    <script async src="./sirens.js"></script>
+</head>
+<body>
+    <h2>Air Raid Warnings in Lviv</h2>
+    <div id="target"></div>
+</body>
+</html>
